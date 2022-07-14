@@ -1,3 +1,268 @@
-h1 {
+
+/* h1, h4, p {
   text-align: center;
+} */
+
+#h1Home {
+  text-align: center;
+  color: rgb(3, 3, 3)
+}
+.container {
+  height: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: scroll;
+}
+.carousel-item {
+  justify-content: center;
+}
+#HomeBackground {
+  height: 100vh;
+  width: 100%;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+li {
+  font-size: 10px;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* ================= GRID /ABOUT ================= */
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr 1.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  /* gap: 20px 0px; */
+  grid-auto-flow: row;
+  grid-template-areas:
+    "member1 member1 member1"
+    "bandMateImg1 bandMateAbout1 bandMateAbout1"
+    "member2 member2 member2"
+    "bandMateAbout2 bandMateAbout2 bandMateImg2"
+    "member3 member3 member3"
+    "bandMateImg3 bandMateAbout3 bandMateAbout3"
+    "member4 member4 member4"
+    "bandMateAbout4 bandMateAbout4 bandMateImg4";
+}
+
+.bandMateImg1 { 
+  grid-area: bandMateImg1;
+  margin-bottom: 30px;
+}
+
+.bandMateImg2 { 
+  grid-area: bandMateImg2; 
+  margin-bottom: 30px;
+}
+
+.bandMateImg3 { 
+  grid-area: bandMateImg3; 
+  margin-bottom: 30px;
+}
+
+.bandMateImg4 { 
+  grid-area: bandMateImg4; 
+  margin-bottom: 30px;
+}
+
+.member1 { 
+  grid-area: member1; 
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: Rock it;
+}
+.member2 { 
+  grid-area: member2; 
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: Rock it;
+}
+
+.member3 { 
+  grid-area: member3;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: Rock it;
+}
+
+.member4 { 
+  grid-area: member4; 
+  margin-top: 25px;
+  margin-bottom: 5px;
+  font-family: Rock it;
+}
+
+.bandMateAbout1 { 
+  grid-area: bandMateAbout1; 
+  margin-bottom: 30px;
+  background: #272727;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bandMateAbout2 { 
+  grid-area: bandMateAbout2; 
+  margin-bottom: 30px;
+  background: #272727;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.bandMateAbout3 { 
+  grid-area: bandMateAbout3; 
+  margin-bottom: 30px;
+  background: #272727;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.bandMateAbout4 { 
+  grid-area: bandMateAbout4; 
+  margin-bottom: 30px;
+  background: #272727;
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+#memberInfo {
+  align-self: center;
+}
+/* ================= Media Screens ================= */
+@media only screen and (min-device-width: 576px) and (max-device-width: 767px) {
+  .container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .7fr .5fr 1.5fr 0fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "member1"
+      "bandMateImg1"
+      "bandMateAbout1"
+      "member2"
+      "bandMateImg2"
+      "bandMateAbout2"
+      "member3"
+      "bandMateImg3"
+      "bandMateAbout3"
+      "member4"
+      "bandMateImg4"
+      "bandMateAbout4"
+  }
+  .bandMateAbout1 { 
+    grid-area: bandMateAbout1; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout2 { 
+    grid-area: bandMateAbout2; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout3 { 
+    grid-area: bandMateAbout3; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout4 { 
+    grid-area: bandMateAbout4; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 575px) {
+  .container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .7fr .5fr 1.5fr 0fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "member1"
+      "bandMateImg1"
+      "bandMateAbout1"
+      "member2"
+      "bandMateImg2"
+      "bandMateAbout2"
+      "member3"
+      "bandMateImg3"
+      "bandMateAbout3"
+      "member4"
+      "bandMateImg4"
+      "bandMateAbout4"
+  }
+  .bandMateAbout1 { 
+    grid-area: bandMateAbout1; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout2 { 
+    grid-area: bandMateAbout2; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout3 { 
+    grid-area: bandMateAbout3; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .bandMateAbout4 { 
+    grid-area: bandMateAbout4; 
+    margin-bottom: 30px;
+    background: #272727;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
 }
