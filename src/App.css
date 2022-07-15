@@ -7,14 +7,6 @@
   text-align: center;
   color: rgb(3, 3, 3)
 }
-.container {
-  height: 400px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  overflow: scroll;
-}
 .carousel-item {
   justify-content: center;
 }
