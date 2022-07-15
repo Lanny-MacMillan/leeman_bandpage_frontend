@@ -1,9 +1,6 @@
 
 const Merch = () => {
 
-
-
-
     return (
         <>
         
