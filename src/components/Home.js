@@ -6,9 +6,9 @@ const Home = () => {
 
     return (
         <>
-            <div id='HomeBackground' 
+            <div id='homeBackground' 
             style={{ 
-                backgroundImage:`url('https://img.freepik.com/premium-photo/silhouette-concert-crowd-audience-looks-towards-stage-party-people-rock-concert-musical-party-musical-show-group-silhouette-young-audience_152520-1566.jpg')` 
+                backgroundImage:`url('https://c1.wallpaperflare.com/preview/844/100/925/music-show-concert-live.jpg')` 
                 }}>
                     <br/>
                     <br/>

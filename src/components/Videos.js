@@ -10,7 +10,10 @@ const Videos = () => {
         <>
         
         <h1>Videos Page</h1>
-        
+        <div>
+            {youTubeLink}
+        </div>
+
         </>
     )
 }

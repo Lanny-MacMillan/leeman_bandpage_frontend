@@ -1,7 +1,7 @@
 import Leeman from '../images/DrumsSolo.jpg'
 import Singing from '../images/Singing.jpg'
 import Guitarist from '../images/guitaristSolo.jpg'
-import BandStreet from '../images/BandStreet.jpeg'
+import Background from '../images/The-Strain-100-Vertices.jpeg'
 import Guitarists from '../images/Guitarists.jpg'
 
 
@@ -13,6 +13,11 @@ function About() {
 
     return (
         <>
+        <div id='aboutBackground' 
+            style={{ 
+                // backgroundImage: `url('https://i.imgur.com/3oHhx7I.jpg')`
+                background: '#757575'
+                }}>
         <div class="container">
             <div class="member1">
                 <h4>Matt Leeman - Drums</h4>
@@ -74,6 +79,7 @@ function About() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             </div>
+        </div>
         </div>
         </>
     );
