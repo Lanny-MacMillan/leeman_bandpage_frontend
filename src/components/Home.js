@@ -16,6 +16,9 @@ const Home = () => {
             <br/>
             <br/>
             <h4 id='h1Home'>Insert some band stuff here</h4>
+            <br/>
+            <br/>
+            <h4 id='h1Home'>no hidden dicks</h4>
             </div>
 
         </>
