@@ -18,63 +18,63 @@ function About() {
                 // backgroundImage: `url('https://i.imgur.com/3oHhx7I.jpg')`
                 background: '#757575'
                 }}>
-        <div class="container">
-            <div class="member1">
+        <div className="container">
+            <div className="member1">
                 <h4>Matt Leeman - Drums</h4>
             </div>
-            <div class="bandMateImg1">
+            <div className="bandMateImg1">
                 <img
                     className="d-block d-md-block d-lg-block w-100 img-fluid"
                     src={Leeman}
                     alt="Matt Leeman-Drums"
                 />
             </div>
-            <div class="member2">
+            <div className="member2">
                 <h4>Tim - Vocals, Guitar</h4>
             </div>
-            <div class="bandMateImg2">
+            <div className="bandMateImg2">
                 <img
                     className="d-block w-100"
                     src={Singing}
                     alt="Third slide"
                 />
             </div>
-            <div class="member3">
+            <div className="member3">
                 <h4>Jack - Lead Guitar</h4>
             </div>
-            <div class="bandMateImg3">
+            <div classNameName="bandMateImg3">
                 <img
                     className="d-block w-100"
                     src={Guitarist}
                     alt="Third slide"
                 />
             </div>
-            <div class="member4">
+            <div className="member4">
                 <h4>Myke - Bass</h4>
             </div>
-            <div class="bandMateImg4">
+            <div className="bandMateImg4">
             <img
                     className="d-block w-100"
                     src={Guitarists}
                     alt="Third slide"
                 />
             </div>
-            <div class="bandMateAbout1">
+            <div className="bandMateAbout1">
                 <p id='memberInfo'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div class="bandMateAbout2">
+            <div className="bandMateAbout2">
             <p id='memberInfo'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             </div>
-            <div class="bandMateAbout3">
+            <div className="bandMateAbout3">
             <p id='memberInfo'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             </div>
-            <div class="bandMateAbout4">
+            <div className="bandMateAbout4">
             <p id='memberInfo'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>

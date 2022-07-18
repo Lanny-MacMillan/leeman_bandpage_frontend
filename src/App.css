@@ -7,6 +7,12 @@
 .carousel-item {
   justify-content: center;
 }
+/* .videContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
 #homeBackground {
   height: 100vh;
   width: 100%;
@@ -16,7 +22,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-#aboutBackground {
+/* #aboutBackground {
   height: 100%;
   width: 100%;
   background: center center fixed; 
@@ -24,7 +30,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 li {
   font-size: 10px;
 }
@@ -40,7 +46,7 @@ ul {
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   /* gap: 20px 0px; */
-  grid-auto-flow: row;
+  grid-auto-flow: roww;
   grid-template-areas:
     "member1 member1 member1"
     "bandMateImg1 bandMateAbout1 bandMateAbout1"
