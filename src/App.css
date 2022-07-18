@@ -1,4 +1,19 @@
-
+.showContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#loginForm {
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+#title {
+  text-align: center;
+  font-family: Rock it;
+  margin-top: 35px;
+}
 #h1Home {
   text-align: center;
   color: rgb(3, 3, 3);
@@ -22,15 +37,7 @@
   -o-background-size: cover;
   background-size: cover;
 }
-/* #aboutBackground {
-  height: 100%;
-  width: 100%;
-  background: center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-} */
+
 li {
   font-size: 10px;
 }

@@ -3,7 +3,7 @@ import './App.css';
 import Home from './components/Home'
 import About from './components/About'
 import Music from './components/Music'
-import Videos from './components/Videos'
+import Shows from './components/Shows'
 import Merch from './components/Merch'
 import Admin from './components/Admin'
 import ResponsiveAppBar from './components/NavBar.js';
@@ -34,7 +34,7 @@ const App = () => {
         <Route path='Home' element={<Home />} />
         <Route path='About' element={<About />} />
         <Route path='Music' element={<Music />} />
-        <Route path='Videos' element={<Videos />} />
+        <Route path='Shows' element={<Shows />} />
         <Route path='Merch' element={<Merch />} />
         <Route path='Admin' element={<Admin />} />
       </Routes>

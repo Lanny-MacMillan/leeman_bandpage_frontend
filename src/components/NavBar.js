@@ -13,9 +13,10 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import {Link} from 'react-router-dom';
+import bandIcon from '../images/bigMoodIcon.jpeg'
 
 
-const pages = ['Home', 'About', 'Music', 'Videos', 'Merch'];
+const pages = ['Home', 'About', 'Shows', 'Music', 'Merch'];
 const settings = ['Admin'];
 
 const ResponsiveAppBar = () => {
@@ -131,9 +132,9 @@ const ResponsiveAppBar = () => {
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
-                <Tooltip title="Open settings">
+                <Tooltip title="Open Settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                    <Avatar alt="A" src={bandIcon} />
                 </IconButton>
                 </Tooltip>
                 <Menu
