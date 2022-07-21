@@ -16,8 +16,8 @@ import {Link} from 'react-router-dom';
 import bandIcon from '../images/bigMoodIcon.jpeg'
 
 
-const pages = ['Home', 'About', 'Shows', 'Music', 'Merch'];
-const settings = ['Admin'];
+const pages = ['Home', 'About', 'Shows', 'Music', 'Merch', 'Photos'];
+const settings = ['Contact', 'Admin'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
