@@ -2,6 +2,7 @@ import {useState, useEffect} from'react'
 import axios from 'axios'
 import Button from '@mui/material/Button';
 import Edit from '../components/Edit'
+import Add from '../components/Add'
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -34,7 +35,7 @@ const AdminCrud = (props) => {
         <div className='showContainer'>
             {shows.map((show) => {
             return(
-                <Card sx={{ maxWidth: 400, m: 1 }}>
+                <Card id='Card' sx={{ maxWidth: 400, m: 1 }}>
                 <CardHeader
                     title={
                     loading ? (
@@ -105,7 +106,7 @@ const AdminCrud = (props) => {
         <div className='showContainer'>
             {shows.map((show) => {
             return(
-                <Card sx={{ height: 1500, maxWidth: 900, m: 1 }}>
+                <Card id='Card' sx={{ height: 1500, maxWidth: 900, m: 1 }}>
                 <CardHeader
                     title={
                     loading ? (
@@ -226,6 +227,18 @@ const AdminCrud = (props) => {
         setShows(shows.filter(show => show.id == selectedshow.id))
     }
     
+    const handleCreate = (addShow) => {
+        axios
+            .post(APIBaseURL, addShow)
+            .then((response) => {
+            setShows([...shows, response.data])
+            .catch((error) => {
+                console.log("Problem submitting New Post", error);
+            });
+            // getShows()
+            }
+            )
+    }
 
     const handleUpdate =(editshow) => {
         console.log('before .put App.js')
@@ -257,9 +270,10 @@ const AdminCrud = (props) => {
     }, [])
     return (
         <>
-        {/* <div className="showContainer">
-            <h1 id='title'>Shows</h1>
-        </div> */}
+        <div className='showContainer'>
+            <Add handleCreate={handleCreate}/>
+        </div>
+        
         {showShows ? <DisplayAll/> : null}
         {showshow ? <DisplayOne/> : null}     
         

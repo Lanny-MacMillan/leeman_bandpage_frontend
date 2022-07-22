@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 import '../App.css';
 // import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-import Home from '../components/Home'
+import AdminCrud from '../components/AdminCrud'
 
 
 
@@ -98,32 +98,32 @@ const Admin = (props) => {
             <>
             <div className="container">
 
-<form>
-    <TextField
-        style={{ width: "400px", margin: "5px", align: 'center'}}
-        type="text"
-        label="Email"
-        variant="outlined"
-        name="email" 
-        value={user.email}
-        onChange={handleChange}
-    />
-    <br />
-    <TextField
-        style={{ width: "400px", margin: "5px" }}
-        type="text"
-        label="Password"
-        variant="outlined"
-        name="password" 
-        value={user.password}
-        onChange={handleChange}
-    />
-    <br />
-    <Button id='Button' onClick={handleSubmitExit} type="submit" variant="contained">Create Account</Button>
-    <Button id='Button' onClick={handleSubmitLogin} type="submit" variant="contained">Login</Button>
+        <form>
+            <TextField
+                style={{ width: "400px", margin: "5px", align: 'center'}}
+                type="text"
+                label="Email"
+                variant="outlined"
+                name="email" 
+                value={user.email}
+                onChange={handleChange}
+            />
+            <br />
+            <TextField
+                style={{ width: "400px", margin: "5px" }}
+                type="text"
+                label="Password"
+                variant="outlined"
+                name="password" 
+                value={user.password}
+                onChange={handleChange}
+            />
+            <br />
+            <Button id='Button' onClick={handleSubmitExit} type="submit" variant="contained">Create Account</Button>
+            <Button id='Button' onClick={handleSubmitLogin} type="submit" variant="contained">Login</Button>
 
 
-</form>
+        </form>
     </div>
             </>
         )
@@ -148,7 +148,7 @@ const Admin = (props) => {
             style={{ 
                 background: '#757575'
                 }}>
-        {userLogIn ? <Home/> : 
+        {userLogIn ? <AdminCrud /> : 
         <>
         <div className="showContainer">
             <h1 id='title'>Band Login</h1>

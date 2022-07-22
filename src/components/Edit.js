@@ -15,11 +15,11 @@ const Edit = (props) => {
     }
     return (
         <>
-        <Button id='Button' type="button" variant="outlined" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <Button id='Button' type="button" variant="outlined" data-bs-toggle="modal" data-bs-target="#editModal">
         Edit Show
         </Button>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-dialog modal-dialog-centered">
             <div class="modal-content">
             <div class="modal-header">
@@ -32,7 +32,7 @@ const Edit = (props) => {
             style={{ width: "400px", margin: "5px", align: 'center'}}
             id='modalText'
             type="text"
-            label="Name"
+            label="Venue"
             variant="outlined"
             name="venue" 
             value={show.venue}
