@@ -175,7 +175,7 @@ const Admin = (props) => {
                 onChange={handleChange}
             />
             <br />
-            <Button id='Button' onClick={handleSubmitExit} type="submit" variant="contained">Create Account</Button>
+            {/* <Button id='Button' onClick={handleSubmitExit} type="submit" variant="contained">Create Account</Button> */}
             <Button id='Button' onClick={handleSubmitLogin} type="submit" variant="contained">Login</Button>
 
 
