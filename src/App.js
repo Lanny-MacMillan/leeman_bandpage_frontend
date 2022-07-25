@@ -8,7 +8,6 @@ import Merch from './components/Merch'
 import Admin from './components/Admin'
 import Contact from './components/Contact'
 import Images from './components/Images'
-import AdminCrud from './components/AdminCrud'
 import ResponsiveAppBar from './components/NavBar.js';
 import { Route, Routes} from "react-router";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
@@ -41,7 +40,6 @@ const App = () => {
         <Route path='Merch' element={<Merch />} />
         <Route path='Admin' element={<Admin />} />
         <Route path='Contact' element={<Contact />} />
-        <Route path='AdminCrud' element={<AdminCrud />} />
         <Route path='Photos' element={<Images />} />
       </Routes>
     </ThemeProvider>

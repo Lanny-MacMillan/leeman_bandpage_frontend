@@ -93,32 +93,32 @@ const ResponsiveAppBar = () => {
                 >
                 {pages.map((page) => (
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">
-                        <Link style={{textdecoration: 'none', color: 'white'}} to={`/${page}`}>{page}</Link>
-                    </Typography>
+                        <Typography textAlign="center">
+                            <Link style={{textdecoration: 'none', color: 'white'}} to={`/${page}`}>{page}</Link>
+                        </Typography>
                     </MenuItem>
                 ))}
-                </Menu>
+                    </Menu>
             </Box>
             <MusicNoteIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-            <Typography
-                variant="h5"
-                noWrap
-                component="a"
-                href=""
-                sx={{
-                mr: 2,
-                display: { xs: 'flex', md: 'none' },
-                flexGrow: 1,
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-                }}
-            >
-                Big Mood
-            </Typography>
+                <Typography
+                    variant="h5"
+                    noWrap
+                    component="a"
+                    href=""
+                    sx={{
+                    mr: 2,
+                    display: { xs: 'flex', md: 'none' },
+                    flexGrow: 1,
+                    fontFamily: 'monospace',
+                    fontWeight: 700,
+                    letterSpacing: '.3rem',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    }}
+                >
+                    Big Mood
+                </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
                 <Button
@@ -130,7 +130,7 @@ const ResponsiveAppBar = () => {
                 </Button>
                 ))}
             </Box>
-
+        {/* ===========================SETTINGS BOX ========================== */}
             <Box sx={{ flexGrow: 0 }}>
                 <Tooltip title="Open Settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

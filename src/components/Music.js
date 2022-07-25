@@ -6,10 +6,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import Button from '@mui/material/Button';
-// import RssFeedIcon from '@mui/icons-material/RssFeed';
-// import AppleIcon from '@mui/icons-material/Apple';
-// import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-// import EqualizerIcon from '@mui/icons-material/Equalizer';
+import RssFeedIcon from '@mui/icons-material/RssFeed';
+import AppleIcon from '@mui/icons-material/Apple';
+import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+import EqualizerIcon from '@mui/icons-material/Equalizer';
 
 const axios = require("axios");
 
@@ -23,7 +23,29 @@ const Music = (props) => {
     const youTubeAPI = process.env.REACT_APP_YOUTUBE_API_KEY
     const youTubeLink = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${channel_ID}&key=${youTubeAPI}`
 
-
+    const musicLinks = () => {
+        return (
+            <>
+            <h1>Merch Page</h1>
+            <h4>Big Mood-HearNow Link Below</h4>
+            <br/>
+            <a href='https://bigmood.hearnow.com/late-nights'>Click here for HearNow</a>
+            <ul>Get the Music
+                <li><RssFeedIcon />Spotify</li>
+                <br/>
+                <li><AppleIcon />Apple Music</li>
+                <br/>
+                <li><LibraryMusicIcon />Itunes</li>
+                <br/>
+                <li>Amazon</li>
+                <br/>
+                <li>YouTube</li>
+                <br/>
+                <li><EqualizerIcon />Deezer</li>
+            </ul>
+            </>
+        )
+    }
     const getVideos = () => {
         axios
             .get(youTubeLink)
@@ -38,10 +60,11 @@ const Music = (props) => {
         <div className='musicContainer'>
             {videos.map((item) => {
             return(
-                <Grid 
-                container wrap="no-wrap"
-                className='smallMusicContainer'
-                >
+                // <Grid 
+                // container wrap="nowrap"
+                // className='smallMusicContainer'
+                // >
+                <div className='videosContainer'>
                     <Box  sx={{ width: 310, marginRight: 0.5, my: 5 }}>
                     {item ? (
                         <img
@@ -75,8 +98,8 @@ const Music = (props) => {
                         </Box>
                     )}
                     </Box>
-
-                </Grid>
+                    </div>
+                // </Grid>
 
         
             )
@@ -107,7 +130,5 @@ const Music = (props) => {
 export default Music
 
 
-// background-color: #757575;
-// background-image: ;
 
 

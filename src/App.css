@@ -16,6 +16,15 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.videosContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  text-align: center;
+}
 #smallMusicContainer {
   width: 500px;
   height: 300px;
@@ -27,6 +36,16 @@
   border-radius: 10px;
 }
 #title {
+  text-align: center;
+  font-family: Rock it;
+  margin-top: 35px;
+}
+#imagesH1 {
+  text-align: center;
+  font-family: Rock it;
+  margin-top: 35px;
+}
+#merchH1 {
   text-align: center;
   font-family: Rock it;
   margin-top: 35px;
@@ -58,6 +77,17 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+#merchBackground {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
 }
 #showsBackground {
   position: static;

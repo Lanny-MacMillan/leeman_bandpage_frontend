@@ -8,26 +8,31 @@ const Contact = (props) => {
 
     return (
         <>
-        <div id='aboutBackground' 
-        style={{ 
-            background: '#757575'
-            }}>
-        Contact the Band
-        <Button
+<div id='merchBackground' 
+    style={{ 
+        background: '#757575'
+    }}>
+    <div className="showContainer">
+    <h1 id='imagesH1'>Contact The Band</h1>
+    </div>
+    <br/>
+    <Button
                 variant="contained"
                 size="large"
                 color="primary"
-                target="_top"
+                target="_blank"
+                // target="_top"
                 rel="noopener noreferrer"
                 href={`mailto:bigmood@gmail.com`}
                 >
             <Typography variant="button" style={{ fontSize: '0.69rem' }}>
-                Send Documents
+                Click Here
             </Typography>
         </Button>
 
-        </div>
+</div>
         </>
     )
 }
 export default Contact
+
