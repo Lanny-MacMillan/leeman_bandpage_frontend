@@ -20,11 +20,11 @@ const App = () => {
       mode: 'dark',
     },
   });
-  const LightTheme = createTheme({
-    palette: {
-      mode: 'light',
-    },
-  });
+  // const LightTheme = createTheme({
+  //   palette: {
+  //     mode: 'light',
+  //   },
+  // });
 
 
     return (
