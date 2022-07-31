@@ -1,9 +1,7 @@
 {
   "name": "leeman_bandpage_frontend",
   "version": "0.1.0",
-  "engines": {
-    "node": "16.x"
-  },
+
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
@@ -29,6 +27,10 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "engines": {
+    "node": "16.x",
+    "npm": "8.5.0"
   },
   "scripts": {
     "start": "react-scripts start",
