@@ -1,7 +1,6 @@
 import {useState, useEffect} from'react'
 import axios from 'axios'
 import Button from '@mui/material/Button';
-import Edit from '../components/Edit'
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
@@ -9,7 +8,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
-import TextField from '@mui/material/TextField';
 
 const Shows = (props) => {
     const [shows, setShows] = useState([])
