@@ -6,10 +6,10 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
 import Button from '@mui/material/Button';
-import RssFeedIcon from '@mui/icons-material/RssFeed';
-import AppleIcon from '@mui/icons-material/Apple';
-import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
-import EqualizerIcon from '@mui/icons-material/Equalizer';
+// import RssFeedIcon from '@mui/icons-material/RssFeed';
+// import AppleIcon from '@mui/icons-material/Apple';
+// import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
+// import EqualizerIcon from '@mui/icons-material/Equalizer';
 
 const axios = require("axios");
 
@@ -31,17 +31,17 @@ const Music = (props) => {
             <br/>
             <a href='https://bigmood.hearnow.com/late-nights'>Click here for HearNow</a>
             <ul>Get the Music
-                <li><RssFeedIcon />Spotify</li>
+                {/* <li><RssFeedIcon />Spotify</li> */}
                 <br/>
-                <li><AppleIcon />Apple Music</li>
+                {/* <li><AppleIcon />Apple Music</li> */}
                 <br/>
-                <li><LibraryMusicIcon />Itunes</li>
+                {/* <li><LibraryMusicIcon />Itunes</li> */}
                 <br/>
                 <li>Amazon</li>
                 <br/>
                 <li>YouTube</li>
                 <br/>
-                <li><EqualizerIcon />Deezer</li>
+                {/* <li><EqualizerIcon />Deezer</li> */}
             </ul>
             </>
         )
