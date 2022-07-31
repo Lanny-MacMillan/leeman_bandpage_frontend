@@ -1,6 +1,9 @@
 {
   "name": "leeman_bandpage_frontend",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
