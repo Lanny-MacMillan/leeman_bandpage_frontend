@@ -20,12 +20,8 @@ const App = () => {
       mode: 'dark',
     },
   });
-  // const LightTheme = createTheme({
-  //   palette: {
-  //     mode: 'light',
-  //   },
-  // });
 
+  
 
     return (
       <>
