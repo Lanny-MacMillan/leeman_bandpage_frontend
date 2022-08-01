@@ -27,10 +27,6 @@ const AdminPhoto = (props) => {
         })
     }
 
-    const getImages = () => {
-
-    }
-
     useEffect(() => {
         listAll(imagesListRef).then((response) => {
             response.items.forEach((item) => {
