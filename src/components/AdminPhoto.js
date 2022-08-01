@@ -43,7 +43,7 @@ const AdminPhoto = (props) => {
                 background: '#757575'
                 }}>
             <div className="showContainer">
-                <h1 id='imagesH1'>Images Coming Soon</h1>
+                <h1 id='imagesH1'>Image Upload</h1>
             </div>
             <div className='imageFile'>
                 <input type='file' onChange={(event) => {setImageUpload(event.target.files[0]);
