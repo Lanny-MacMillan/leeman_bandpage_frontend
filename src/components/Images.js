@@ -3,6 +3,9 @@ import {useState, useEffect} from 'react'
 import { storage } from "./firebase";
 import { ref, uploadBytes, listAll, getDownloadURL, list } from "firebase/storage"
 import { v4 } from 'uuid'
+import Button from '@mui/material/Button';
+
+
 
 const Images = (props) => {
     const [imageUpload, setImageUpload] = useState(null)
@@ -50,7 +53,7 @@ const Images = (props) => {
                 <input type='file' onChange={(event) => {setImageUpload(event.target.files[0]);
                 }}/>
                 <br/>
-                <button onClick={uploadImage}>Upload Image</button>
+                <Button id='Button' variant="outlined" onClick={uploadImage}>Upload Image</Button>
             </div>
             <div className='bandImages'>
                 {imageUrls.map((url) => {
