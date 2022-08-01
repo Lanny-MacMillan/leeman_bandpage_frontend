@@ -10,12 +10,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import Skeleton from '@mui/material/Skeleton';
+import AdminPhoto from '../components/AdminPhoto'
 
 
 const AdminCrud = (props) => {
     const [shows, setShows] = useState([])
     const [showShows, setShowShows] = useState(true)
     const [showshow, setShowshow] = useState(false)
+    const [showImages, setShowImages] = useState(false)
+
     const { loading = false } = props;
 
     const googleURL = `https://www.google.com/maps/embed/v1/search?key=${process.env.REACT_APP_API_KEY}&q=`
@@ -32,6 +35,9 @@ const AdminCrud = (props) => {
     const DisplayAll = () => {
         return (
             <>
+        <div className='showContainer'> 
+            <Add handleCreate={handleCreate}/>
+        </div>
         <div className='showContainer'>
             {shows.map((show) => {
             return(
@@ -220,8 +226,16 @@ const AdminCrud = (props) => {
         getShows()
         setShowShows(true)
         setShowshow(false)
+        setShowImages(false)
+    }
+
+    const displayImages = () => {
+        setShowImages(true)
+        setShowShows(false)
+        setShowshow(false)
     }
     const showPage = (selectedshow) => {
+        setShowImages(false)
         setShowShows(false)
         setShowshow(true)
         setShows(shows.filter(show => show.id == selectedshow.id))
@@ -271,12 +285,17 @@ const AdminCrud = (props) => {
     return (
         <>
         <div className='showContainer'>
-            <Add handleCreate={handleCreate}/>
+            <Button variant='outlined' onClick={displayImages}>Photos</Button>
+            <Button variant='outlined' onClick={homePage}>Shows</Button>
         </div>
+        <br/>
+
+
         
         {showShows ? <DisplayAll/> : null}
         {showshow ? <DisplayOne/> : null}     
-        
+        {showImages ? <AdminPhoto/> : null}
+
         </>
     )
 }

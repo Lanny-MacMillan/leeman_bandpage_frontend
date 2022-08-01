@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 
 
 
-const Images = (props) => {
+const AdminPhoto = (props) => {
     const [imageUpload, setImageUpload] = useState(null)
     const [imageUrls, setImageUrls] = useState([]);
 
@@ -27,6 +27,9 @@ const Images = (props) => {
         })
     }
 
+    const getImages = () => {
+
+    }
 
     useEffect(() => {
         listAll(imagesListRef).then((response) => {
@@ -44,14 +47,14 @@ const Images = (props) => {
                 background: '#757575'
                 }}>
             <div className="showContainer">
-                <h1 id='imagesH1'>Some Images of Us</h1>
+                <h1 id='imagesH1'>Images Coming Soon</h1>
             </div>
-            {/* <div className='imageFile'>
+            <div className='imageFile'>
                 <input type='file' onChange={(event) => {setImageUpload(event.target.files[0]);
                 }}/>
                 <br/>
                 <Button id='Button' variant="outlined" onClick={uploadImage}>Upload Image</Button>
-            </div> */}
+            </div>
             <div className='bandImages'>
                 {imageUrls.map((url) => {
                     return <img className='urlImg' src={url}
@@ -62,4 +65,4 @@ const Images = (props) => {
         </>
     )
 }
-export default Images
+export default AdminPhoto
