@@ -16,7 +16,7 @@ import {Link} from 'react-router-dom';
 import bandIcon from '../images/bigMoodIcon.jpeg'
 
 
-const pages = ['Home', 'About', 'Shows', 'Music', 'Merch', 'Photos'];
+const pages = ['Home', 'About', 'Shows', 'Music', 'Photos'];
 const settings = ['Contact', 'Admin'];
 
 const ResponsiveAppBar = () => {

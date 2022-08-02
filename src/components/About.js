@@ -20,7 +20,7 @@ function About() {
                 }}>
         <div className="container">
             <div className="member1">
-                <h4>Matt Leeman - Drums</h4>
+                <h4 id='memberName'>Matt Leeman - Drums</h4>
             </div>
             <div className="bandMateImg1">
                 <img
@@ -30,7 +30,7 @@ function About() {
                 />
             </div>
             <div className="member2">
-                <h4>Tim - Vocals, Guitar</h4>
+                <h4 id='memberName'>Tim - Vocals, Guitar</h4>
             </div>
             <div className="bandMateImg2">
                 <img
@@ -40,7 +40,7 @@ function About() {
                 />
             </div>
             <div className="member3">
-                <h4>Jack - Lead Guitar</h4>
+                <h4 id='memberName'>Jack - Lead Guitar</h4>
             </div>
             <div classNameName="bandMateImg3">
                 <img
@@ -50,7 +50,7 @@ function About() {
                 />
             </div>
             <div className="member4">
-                <h4>Myke - Bass</h4>
+                <h4 id='memberName'>Myke - Bass</h4>
             </div>
             <div className="bandMateImg4">
             <img

@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react'
 import { storage } from "./firebase";
 import { ref, uploadBytes, listAll, getDownloadURL, list } from "firebase/storage"
 import { v4 } from 'uuid'
-import Button from '@mui/material/Button';
 
 
 
@@ -46,12 +45,6 @@ const Images = (props) => {
             <div className="showContainer">
                 <h1 id='imagesH1'>Some Images of Us Soon</h1>
             </div>
-            {/* <div className='imageFile'>
-                <input type='file' onChange={(event) => {setImageUpload(event.target.files[0]);
-                }}/>
-                <br/>
-                <Button id='Button' variant="outlined" onClick={uploadImage}>Upload Image</Button>
-            </div> */}
             <div className='bandImages'>
                 {imageUrls.map((url) => {
                     return <img className='urlImg' src={url}

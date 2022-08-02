@@ -1,10 +1,8 @@
 import './App.css';
-// import {useState, useEffect} from'react'
 import Home from './components/Home'
 import About from './components/About'
 import Music from './components/Music'
 import Shows from './components/Shows'
-import Merch from './components/Merch'
 import Admin from './components/Admin'
 import Contact from './components/Contact'
 import Images from './components/Images'
@@ -33,7 +31,6 @@ const App = () => {
         <Route path='About' element={<About />} />
         <Route path='Music' element={<Music />} />
         <Route path='Shows' element={<Shows />} />
-        <Route path='Merch' element={<Merch />} />
         <Route path='Admin' element={<Admin />} />
         <Route path='Contact' element={<Contact />} />
         <Route path='Photos' element={<Images />} />
