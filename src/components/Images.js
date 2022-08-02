@@ -43,7 +43,7 @@ const Images = (props) => {
                 background: '#757575'
                 }}>
             <div className="showContainer">
-                <h1 id='imagesH1'>Some Images of Us Soon</h1>
+                <h1 id='imagesH1'>Some Images of Us!</h1>
             </div>
             <div className='bandImages'>
                 {imageUrls.map((url) => {
