@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap');
-/* font-family: 'Mouse Memoirs', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
-/* font-family: 'BhuTuka Expanded One', cursive; */
 
 
 .showContainer {
@@ -19,7 +17,7 @@
   justify-content: center;
 }
 .imageFile {
-  margin-top: 50px
+  margin-top: 50px;
 }
 .bandImages {
   /* width: 100vw; */
@@ -32,11 +30,10 @@
 .urlImg {
   width: 300px;
   max-width:280px;
-  margin: 10px
+  margin: 10px;
 }
 #Card {
   text-align: center;
-  /* border-radius: 25px; */
   box-shadow: 10px 10px rgb(0, 0, 0);
 }
 .musicContainer {
@@ -66,31 +63,31 @@
 }
 #title {
   text-align: center;
-  font-family: 'Mouse Memoirs', sans-serif;;
+  font-family: 'Mouse Memoirs', sans-serif;
   margin-top: 35px;
 }
 #imagesH1 {
   text-align: center;
-  font-family: 'Mouse Memoirs', sans-serif;;
+  font-family: 'Mouse Memoirs', sans-serif;
   margin-top: 35px;
   margin-bottom: 25px;
 }
 #merchH1 {
   text-align: center;
-  font-family: 'Mouse Memoirs', sans-serif;;
+  font-family: 'Mouse Memoirs', sans-serif;
   margin-top: 35px;
 }
 #h1HomeMain {
   text-align: center;
   color: rgb(3, 3, 3);
   font-size: 70px;
-  font-family: 'Mouse Memoirs', sans-serif;;
+  font-family: 'Mouse Memoirs', sans-serif;
 }
 #h1Home {
   text-align: center;
   color: rgb(3, 3, 3);
   font-size: 40px;
-  font-family: 'Mouse Memoirs', sans-serif;;
+  font-family: 'Mouse Memoirs', sans-serif;
 }
 .carousel-item {
   justify-content: center;
@@ -193,8 +190,7 @@ ul {
   grid-template-rows: 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr 1.5fr 0.5fr 1.5fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-  /* gap: 20px 0px; */
-  grid-auto-flow: roww;
+  grid-auto-flow: row;
   grid-template-areas:
     "member1 member1 member1"
     "bandMateImg1 bandMateAbout1 bandMateAbout1"
@@ -442,7 +438,7 @@ ul {
     grid-area: member2; 
     /* margin-top: 25px; */
     margin-bottom: 5px;
-    font-family: 'Mouse Memoirs', sans-serif;;
+    font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
     align-self: flex-end;
     color:rgb(90, 34, 45);
@@ -452,7 +448,7 @@ ul {
     grid-area: member3;
     /* margin-top: 25px; */
     margin-bottom: 5px;
-    font-family: 'Mouse Memoirs', sans-serif;;
+    font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
     align-self: flex-end;
     color:rgb(90, 34, 45);
@@ -462,7 +458,7 @@ ul {
     grid-area: member4; 
     /* margin-top: 25px; */
     margin-bottom: 5px;
-    font-family: 'Mouse Memoirs', sans-serif;;
+    font-family: 'Mouse Memoirs', sans-serif;
     text-align: center;
     align-self: flex-end;
     color:rgb(90, 34, 45);
@@ -470,10 +466,12 @@ ul {
   #FaFacebookSquare {
     margin: 8px;
     color: blue;
+    background: white;
   }
   #FaYoutube {
     margin: 8px;
     color: rgb(255, 0, 0);
+    background: white;
   }
   #SiItunes {
     margin: 8px;
@@ -493,8 +491,8 @@ ul {
   }
   #FaInstagram {
     margin: 8px;
-    color: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-  
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white; 
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 575px) {
   .container {  display: grid;
@@ -557,10 +555,12 @@ ul {
   #FaFacebookSquare {
     margin: 8px;
     color: blue;
+    background: white;
   }
   #FaYoutube {
     margin: 8px;
     color: rgb(255, 0, 0);
+    background: white;
   }
   #SiItunes {
     margin: 8px;
@@ -580,7 +580,8 @@ ul {
   }
   #FaInstagram {
     margin: 8px;
-    color: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+    }
   }
 }
