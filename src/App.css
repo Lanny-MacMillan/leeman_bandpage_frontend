@@ -467,6 +467,49 @@ ul {
     align-self: flex-end;
     color:rgb(90, 34, 45);
   }
+  #FaFacebookSquare {
+    margin: 8px;
+    color: blue;
+  }
+  #FaYoutube {
+    margin: 8px;
+    color: rgb(255, 0, 0);
+  }
+  #SiItunes {
+    margin: 8px;
+    background: rgb(250,88,106);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  #FaSpotify {
+    margin: 8px;
+    color: rgb(28,215,96);
+    background: black;
+    border-radius: 20px;
+  }
+  #GiAudioCassette {
+    margin: 8px;
+    color: rgb(102, 241, 250);
+  }
+  #FaInstagram {
+    margin: 8px;
+    animation: color-shift3 .6s infinite;
+  }
+  @keyframes color-shift3 {
+    0% {
+        color: rgb(147, 12, 250);
+    }
+    33% {
+        color: rgb(208, 61, 3);
+    }
+    66% {
+        color: rgb(255, 217, 0);
+    }
+    100% {
+        color: #ed5cd8;
+    }
+  }
+  
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 575px) {
   .container {  display: grid;
@@ -525,5 +568,47 @@ ul {
     display: flex;
     justify-content: center;
     border-radius: 15px;
+  }
+  #FaFacebookSquare {
+    margin: 8px;
+    color: blue;
+  }
+  #FaYoutube {
+    margin: 8px;
+    color: rgb(255, 0, 0);
+  }
+  #SiItunes {
+    margin: 8px;
+    background: rgb(250,88,106);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+  }
+  #FaSpotify {
+    margin: 8px;
+    color: rgb(28,215,96);
+    background: black;
+    border-radius: 20px;
+  }
+  #GiAudioCassette {
+    margin: 8px;
+    color: rgb(102, 241, 250);
+  }
+  #FaInstagram {
+    margin: 8px;
+    animation: color-shift3 .6s infinite;
+  }
+  @keyframes color-shift3 {
+    0% {
+        color: rgb(147, 12, 250);
+    }
+    33% {
+        color: rgb(208, 61, 3);
+    }
+    66% {
+        color: rgb(255, 217, 0);
+    }
+    100% {
+        color: #ed5cd8;
+    }
   }
 }
