@@ -24,22 +24,22 @@ const Home = () => {
                 <div id='iconContainer'>
                     <h3>
                         <a href="https://www.facebook.com/bigmoodband/" target="_blank">
-                            <FaFacebookSquare id='FaFacebookSquare'/>
+                            <FaFacebookSquare size='1.5em' id='FaFacebookSquare'/>
                         </a>
                         <a href="https://www.instagram.com/bigmoodofficial/" target="_blank">
-                            <FaInstagram id='FaInstagram' />
+                            <FaInstagram size='1.5em' id='FaInstagram' />
                         </a>
                         <a href="https://www.youtube.com/channel/UCLtYoxvuULI2mnng4q32-mA/featured" target="_blank">
-                            <FaYoutube id='FaYoutube'/>
+                            <FaYoutube size='1.5em' id='FaYoutube'/>
                         </a>
                         <a href="https://open.spotify.com/album/0T4LqIiac0s7lobcy4kCLL" target="_blank">
-                            <FaSpotify id='FaSpotify'/>
+                            <FaSpotify size='1.5em' id='FaSpotify'/>
                         </a>
                         <a href="https://music.apple.com/us/album/late-nights-single/1442416001?at=1000lM6c&uo=4&app=apple" target="_blank">
-                            <SiItunes id='SiItunes'/>
+                            <SiItunes size='1.5em' id='SiItunes'/>
                         </a>
                         <a href="https://bigmood.hearnow.com/" target="_blank">
-                            <GiAudioCassette id='GiAudioCassette'/>
+                            <GiAudioCassette size='1.5em' id='GiAudioCassette'/>
                         </a>
                     </h3>
                 </div>
