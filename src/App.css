@@ -16,6 +16,39 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+#iconContainerMusic {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  font-family: 'Mouse Memoirs', sans-serif;
+  overflow: hidden;
+  background-color: rgb(224,30,54);
+  /* background-color: #f1f1f1; */
+  padding: 20px 10px;
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+span {
+  font-size:10px;
+  padding:5px 0 10px 0;
+  display:block;
+  text-transform:uppercase;
+  font-family:'Josefin Sans';
+  letter-spacing:1px;
+  color: black;
+}
 .imageFile {
   margin-top: 50px;
 }
@@ -157,7 +190,7 @@
   background-size: cover;
 }
 #textColor {
-  color:rgb(201, 66, 93);
+  color:rgb(168, 62, 83);
 }
 .modal-body, .modal-header, .modal-footer {
   background-color: #272727 ;
