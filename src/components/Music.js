@@ -9,6 +9,15 @@ import { FaSpotify } from 'react-icons/fa';
 import { GiAudioCassette } from "react-icons/gi";
 import { SiItunes } from "react-icons/si";
 import { FaYoutube } from 'react-icons/fa';
+import Carousel from 'react-bootstrap/Carousel';
+import Studio1 from '../images/Studio1.jpg';
+import Studio2 from '../images/studio2.jpg';
+import Studio3 from '../images/studio3.jpg';
+import Studio4 from '../images/studio4.jpg';
+import Studio5 from '../images/studio5.jpg';
+import Studio6 from '../images/studio6.jpg';
+
+
 
 
 const Music = (props) => {
@@ -44,6 +53,103 @@ const Music = (props) => {
             (err)=> console.error(err)
             )
             .catch((error)=> console.error(error))
+    }
+    const ImageCarousel = () => {
+        return (
+            <>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio1}
+                    alt="First slide"
+                    />
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>Tim on Guitar</h2>
+                    <h4 className='imgCarouselText'>
+                        Tim and our Engineer discussing ideas and collaborating
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio2}
+                    alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>Studio Days</h2>
+                    <h4 className='imgCarouselText'>There really isnt a better place a  person can be than in the studio
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio4}
+                    alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>Jack on Guitar</h2>
+                    <h4 className='imgCarouselText'>
+                        Jack crushing the guitar tracks
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio3}
+                    alt="Fourth slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>Myke on Bass</h2>
+                    <h4 className='imgCarouselText'>
+                        Myke laying down some Bass tracks 
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio5}
+                    alt="Fifth slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>More Jack on Guitar!</h2>
+                    <h4 className='imgCarouselText'>
+                    Heres a little more of Jack crushing the guitar tracks
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                    id='carouselImg'
+                    className="d-block d-md-block d-lg-block w-100"
+                    src={Studio6}
+                    alt="Sixth slide"
+                    />
+
+                    <Carousel.Caption>
+                    <h2 className='imgCarouselText'>Tim on Vocals</h2>
+                    <h4 className='imgCarouselText'>
+                        Tim absolutely dominating the vocal tracks on this album, we cant wait for you to hear it!
+                    </h4>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+
+            </>
+        )
     }
     const DisplayAll = () => {
         return (
@@ -148,6 +254,8 @@ const Music = (props) => {
             <p>
                 Cras mattis sapien vitae posuere tempor. Nam tincidunt, sem vel tincidunt molestie, lacus ipsum blandit purus, vel condimentum enim neque vitae diam. Proin congue efficitur eros non vestibulum. Sed maximus metus vel nulla porta mollis. Maecenas ut accumsan augue. In in lectus eu purus condimentum porttitor a sed risus. Mauris ac vestibulum purus, non dignissim mauris.
             </p>
+            <br/>
+            <ImageCarousel/>
             <br/>
             <h1 class='header'>Videos Below</h1>
         {showVideos ? <DisplayAll/> : null}    
