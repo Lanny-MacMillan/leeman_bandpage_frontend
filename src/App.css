@@ -253,22 +253,23 @@ ul {
 
 .bandMateImg1 { 
   grid-area: bandMateImg1;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .bandMateImg2 { 
   grid-area: bandMateImg2; 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
 }
 
 .bandMateImg3 { 
   grid-area: bandMateImg3; 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .bandMateImg4 { 
   grid-area: bandMateImg4; 
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .member1 { 
