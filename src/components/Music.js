@@ -66,9 +66,9 @@ const Music = (props) => {
                     alt="First slide"
                     />
                     <Carousel.Caption>
-                    <h2 className='imgCarouselText'>Tim on Guitar</h2>
-                    <h4 className='imgCarouselText'>
-                        Tim and our Engineer discussing ideas and collaborating
+                    <h2 className='imgCarouselText'>Tim Devlin on Guitar</h2>
+                    <h4 className='imgCarouselText2'>
+                        Tim and our Engineer - Dave Nelson, discussing ideas and collaborating
                     </h4>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -82,7 +82,7 @@ const Music = (props) => {
 
                     <Carousel.Caption>
                     <h2 className='imgCarouselText'>Studio Days</h2>
-                    <h4 className='imgCarouselText'>There really isnt a better place a  person can be than in the studio
+                    <h4 className='imgCarouselText2'>There really isnt a better place a  person can be than in the studio
                     </h4>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -95,8 +95,8 @@ const Music = (props) => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className='imgCarouselText'>Jack on Guitar</h2>
-                    <h4 className='imgCarouselText'>
+                    <h2 className='imgCarouselText'>Jack Daly on Guitar</h2>
+                    <h4 className='imgCarouselText2'>
                         Jack crushing the guitar tracks
                     </h4>
                     </Carousel.Caption>
@@ -110,8 +110,8 @@ const Music = (props) => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className='imgCarouselText'>Myke on Bass</h2>
-                    <h4 className='imgCarouselText'>
+                    <h2 className='imgCarouselText'>Myke Carton on Bass</h2>
+                    <h4 className='imgCarouselText2'>
                         Myke laying down some Bass tracks 
                     </h4>
                     </Carousel.Caption>
@@ -125,8 +125,8 @@ const Music = (props) => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className='imgCarouselText'>More Jack on Guitar!</h2>
-                    <h4 className='imgCarouselText'>
+                    <h2 className='imgCarouselText'>More JD on Guitar!</h2>
+                    <h4 className='imgCarouselText2'>
                     Heres a little more of Jack crushing the guitar tracks
                     </h4>
                     </Carousel.Caption>
@@ -140,8 +140,8 @@ const Music = (props) => {
                     />
 
                     <Carousel.Caption>
-                    <h2 className='imgCarouselText'>Tim on Vocals</h2>
-                    <h4 className='imgCarouselText'>
+                    <h2 className='imgCarouselText'>Tim Devlin on Vocals</h2>
+                    <h4 className='imgCarouselText2'>
                         Tim absolutely dominating the vocal tracks on this album, we cant wait for you to hear it!
                     </h4>
                     </Carousel.Caption>

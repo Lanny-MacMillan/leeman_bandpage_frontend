@@ -63,8 +63,15 @@ span {
 }
 
 .imgCarouselText {
-  color: black;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  color: rgb(224,30,54);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 45px;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+.imgCarouselText2 {
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  font-size: 35px;
   font-family: 'Mouse Memoirs', sans-serif;
 }
 .urlImg {
