@@ -1,5 +1,4 @@
 import './App.css';
-import Home from './components/Home'
 import About from './components/About'
 import Music from './components/Music'
 import Shows from './components/Shows'
